@@ -7,8 +7,13 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      tricks: ['jump', 'bounce']
+      tricks: []
     }
+  }
+
+  componentDidMount() {
+    getTricks()
+    .then(data => this.setState({tricks : data}))
   }
 
   render() {
