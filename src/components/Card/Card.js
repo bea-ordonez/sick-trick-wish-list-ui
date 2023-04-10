@@ -3,7 +3,7 @@ import './Card.css'
 
 const Card = ({stance, name, obstacle, tutorial}) => {
     return (
-        <div>
+        <div className='card'>
             <h3>{name}</h3>
             <p>{obstacle}</p>
             <p>{stance}</p>

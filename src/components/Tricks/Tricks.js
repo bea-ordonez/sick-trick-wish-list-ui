@@ -6,7 +6,6 @@ const Tricks = ({tricks}) => {
 
     const trickTiles = tricks.map(trick => {
         return (
-            <div>
                 <Card 
                   name={trick.name}
                   stance={trick.stance}
@@ -15,12 +14,11 @@ const Tricks = ({tricks}) => {
                   id={trick.id}
                   key={trick.id}
                 />
-            </div>
         )
     })
 
     return (
-        <div>
+        <div className='tricks-container'>
             {trickTiles}
         </div>
     )
