@@ -4,10 +4,10 @@ import './Card.css'
 const Card = ({stance, name, obstacle, tutorial}) => {
     return (
         <div className='card'>
-            <h3>{name}</h3>
-            <p>{obstacle}</p>
-            <p>{stance}</p>
-            <p>{tutorial}</p>
+            <h3>Name: {name}</h3>
+            <p>Obstacle: {obstacle}</p>
+            <p>Stance: {stance}</p>
+            <p>Tutorial: {tutorial}</p>
         </div>
     )
 }
